@@ -1,18 +1,17 @@
 
 import java.util.Scanner;
 
-public class Pgm3 {
+public class pgm4 {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("enter array elements:");
         int[] a = new int[5];
+        System.out.println("Enter the array elements:");
         for (int i = 0; i <= a.length - 1; i++) {
             a[i] = scan.nextInt();
         }
-
-        System.out.println("the element are:");
-        for (int i = 0; i <= a.length - 1; i++) {
+        System.out.println("the array is:");
+        for (int i = a.length - 1; i >= 0; i--) {
             System.out.println(a[i]);
         }
         scan.close();
